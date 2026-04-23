@@ -37,6 +37,7 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   color: var(--text);
   background:
@@ -73,7 +74,7 @@ svg {
 
 .sketch-sprite {
   position: fixed;
-  width: clamp(10rem, 18vw, 15.5rem);
+  width: clamp(11rem, 19vw, 17rem);
   aspect-ratio: 350 / 374;
   background-position: center;
   background-repeat: no-repeat;
@@ -83,83 +84,83 @@ svg {
 }
 
 .sketch-sprite--1 {
-  top: 5rem;
-  left: 1.5rem;
-  width: clamp(9rem, 15vw, 13rem);
+  top: 4vh;
+  left: 2vw;
+  width: clamp(10rem, 16vw, 14rem);
   background-image: url("./assets/background/bg-01.png");
   transform: rotate(-8deg);
 }
 
 .sketch-sprite--2 {
-  top: 7rem;
-  right: 4rem;
-  width: clamp(10rem, 17vw, 14rem);
+  top: 8vh;
+  right: 2vw;
+  width: clamp(11rem, 18vw, 15rem);
   background-image: url("./assets/background/bg-02.png");
   transform: rotate(10deg);
 }
 
 .sketch-sprite--3 {
-  top: 29rem;
-  right: 8vw;
-  width: clamp(8.5rem, 14vw, 12rem);
+  top: 24vh;
+  right: 14vw;
+  width: clamp(9.5rem, 15vw, 13rem);
   background-image: url("./assets/background/bg-03.png");
   transform: rotate(6deg);
 }
 
 .sketch-sprite--4 {
-  top: 48rem;
-  left: 2vw;
-  width: clamp(9rem, 15vw, 12.5rem);
+  top: 38vh;
+  left: 1vw;
+  width: clamp(10rem, 16vw, 13.5rem);
   background-image: url("./assets/background/bg-04.png");
   transform: rotate(-7deg);
 }
 
 .sketch-sprite--5 {
-  top: 58rem;
-  right: 3vw;
-  width: clamp(7.5rem, 11vw, 9.5rem);
+  top: 50vh;
+  right: 6vw;
+  width: clamp(8.25rem, 12vw, 10.5rem);
   background-image: url("./assets/background/bg-05.png");
   transform: rotate(12deg);
 }
 
 .sketch-sprite--6 {
-  top: 84rem;
-  left: 5vw;
-  width: clamp(8.5rem, 14vw, 11.5rem);
+  top: 60vh;
+  left: 8vw;
+  width: clamp(9.5rem, 15vw, 12.5rem);
   background-image: url("./assets/background/bg-06.png");
   transform: rotate(-10deg);
 }
 
 .sketch-sprite--7 {
-  top: 96rem;
-  right: 6vw;
-  width: clamp(9.5rem, 15vw, 12.5rem);
+  top: 70vh;
+  right: 1vw;
+  width: clamp(10.5rem, 16vw, 13.5rem);
   background-image: url("./assets/background/bg-07.png");
   transform: rotate(8deg);
 }
 
 .sketch-sprite--8 {
-  bottom: 24rem;
-  left: 10vw;
-  width: clamp(7.8rem, 12vw, 10.5rem);
+  bottom: 22vh;
+  left: 4vw;
+  width: clamp(8.75rem, 13vw, 11.5rem);
   background-image: url("./assets/background/bg-08.png");
   transform: rotate(-14deg);
 }
 
 .sketch-sprite--9 {
-  bottom: 10rem;
-  right: 14vw;
-  width: clamp(8.5rem, 13vw, 10.5rem);
+  bottom: 12vh;
+  right: 16vw;
+  width: clamp(9.5rem, 14vw, 11.5rem);
   background-image: url("./assets/background/bg-09.png");
   transform: rotate(18deg);
 }
 
 .sketch-sprite--10 {
-  bottom: 3rem;
-  left: 2rem;
-  width: clamp(8.5rem, 14vw, 11.5rem);
+  bottom: 2vh;
+  right: 2vw;
+  width: clamp(9.5rem, 15vw, 12.5rem);
   background-image: url("./assets/background/bg-10.png");
-  transform: rotate(-12deg);
+  transform: rotate(12deg);
 }
 
 .site-header,
@@ -315,15 +316,6 @@ svg {
 
 .hero__title-group {
   min-width: 0;
-}
-
-.eyebrow {
-  margin: 0 0 0.7rem;
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 0.22em;
-  font-size: 0.72rem;
-  font-weight: 800;
 }
 
 .hero h1 {
@@ -693,6 +685,11 @@ svg {
 }
 
 @media (max-width: 760px) {
+  .sketch-background {
+    position: fixed;
+    inset: 0;
+  }
+
   .site-header {
     flex-wrap: wrap;
     border-radius: 1.4rem;
@@ -780,6 +777,7 @@ svg {
   }
 
   .sketch-sprite {
+    position: fixed;
     opacity: 0.2;
   }
 
@@ -792,34 +790,34 @@ svg {
   }
 
   .sketch-sprite--2 {
-    top: 6.5rem;
+    top: 10vh;
     right: -0.75rem;
-    width: 10rem;
+    width: 11rem;
   }
 
   .sketch-sprite--4 {
-    top: 39rem;
-    left: -1.25rem;
-    width: 9rem;
+    top: 33vh;
+    left: -0.75rem;
+    width: 10rem;
   }
 
   .sketch-sprite--6 {
-    top: auto;
-    bottom: 28rem;
-    left: -0.5rem;
-    width: 8.75rem;
+    top: 54vh;
+    bottom: auto;
+    left: -0.25rem;
+    width: 9.75rem;
   }
 
   .sketch-sprite--8 {
-    bottom: 16rem;
+    bottom: 24vh;
     left: auto;
-    right: -1rem;
-    width: 8.25rem;
+    right: -0.75rem;
+    width: 9.25rem;
   }
 
   .sketch-sprite--10 {
-    bottom: 4rem;
-    left: -1rem;
-    width: 8.75rem;
+    bottom: 3vh;
+    right: -0.5rem;
+    width: 9.75rem;
   }
 }
